@@ -5,28 +5,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculador de fig. geometricas</title>
+    <style>
+        body {
+            background-color: #010409;
+            color: whitesmoke;
+            font-family: arial;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        h2 {
+            margin: 0px;
+        }
+        h1 {
+            margin: 0px;
+        }
+        .card {
+            width: 25%;
+            border-radius: 12px;
+            background-color: #0D1117;
+            height: 70vh;
+            }
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            height: 80%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            justify-content: space-evenly;
+        }
+        .content {
+            display: flex;
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        button{
+            margin-top: 8px;
+            cursor: pointer;
+            outline: 0;
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 16px;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        button:hover {
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+        }          
+        input {
+            background-color: transparent;
+            border-radius: .25rem;
+            border: 1px solid #30363D;
+            outline: 0;
+            margin-top: 8px;
+            color: white;
+            height: 20px;
+            text-align: center;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        label {
+            font-size: small;
+        }
+        .input-triangulo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .input-triangulo div {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-triangulo div input {
+            width: 120px;
+        }
+        header {
+            background-color: #0D1117;
+            height: 80px;
+            margin-bottom: 20px;
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+        }
+
+    </style>
 </head>
 <body>
     <header>
         <h1>Bienvenido al calculador de figuras geometricas</h1>
-        <p>Este es el primer taller practico de JavaScrpit de Platzi</p>
     </header>
-    <section>
-        <h2>Calcula el area y perimetro de un cuadrado</h2>
-        <form action="">
-            <label for="InputCuadrado">
-                Escribe cuanto mide el lado del cuadrado:
-            </label>
-            <input id="InputCuadrado" type="number">
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular perimetro
-            </button>
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular area
-            </button>
-        </form>
-    
-    
+    <section class="content">
+        <div class="card">
+            <div class="card-content">
+                <h2>Cuadrado</h2>
+                <form action="">
+                    <label for="InputCuadrado">
+                        Escribe cuanto mide el lado del cuadrado:
+                    </label>
+                    <input id="InputCuadrado" type="number">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular area
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Triangulo</h2>
+                <form action="">
+                    <label for="InputTrianguloLado1">
+                        Escribe cuanto miden los lados del triangulo:
+                    </label>
+                    <div class="input-triangulo">
+                        <div>
+                            <input id="InputTrianguloLado1" type="number" placeholder="Primer lado">
+                    
+                            <label for="InputTrianguloLado2"></label>
+                            <input id="InputTrianguloLado2" type="number" placeholder="Segundo lado">
+                        </div>
+                        <div>
+                            <label for="InputTrianguloLado3"></label>
+                            <input id="InputTrianguloLado3" type="number" placeholder="Base">
+                    
+                            <label for="InputTrianguloLado4"></label>
+                            <input id="InputTrianguloLado4" type="number" placeholder="Altura">
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular area
+                    </button>
+
+                </form>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Circulo</h2>
+                <form action="">
+                    <label for="InputCirculo">
+                        Escribe cuanto mide el radio del circulo:
+                    </label>
+                    <input id="InputCirculo" type="number">
+                    <button type="button" onclick="calcularPerimetroCirculo()">
+                        Calcular perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular area
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
     <script src="./figuras.js"></script>
 </body>
