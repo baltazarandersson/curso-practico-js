@@ -44,3 +44,17 @@ console.log(`PI es ${PI}`)
 console.log(`El perimetro del circulo es ${perimetroCirculo(radioCirculo, PI)} cm`)
 console.log(`El area del circulo es ${areaCirculo(radioCirculo, PI)} cm2`)
 console.groupEnd();
+
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado")
+    const value = input.value
+    const perimetro = perimetroCuadrado(value)
+    alert(perimetro)
+}
+ 
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado")
+    const value = input.value
+    const area = areaCuadrado(value)
+    alert(area) 
+}

@@ -7,7 +7,27 @@
     <title>Calculador de fig. geometricas</title>
 </head>
 <body>
-    <h1>Bienvenido al calculador de figuras geometricas</h1>
+    <header>
+        <h1>Bienvenido al calculador de figuras geometricas</h1>
+        <p>Este es el primer taller practico de JavaScrpit de Platzi</p>
+    </header>
+    <section>
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">
+                Escribe cuanto mide el lado del cuadrado:
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular area
+            </button>
+        </form>
+    
+    
+    </section>
     <script src="./figuras.js"></script>
 </body>
 </html>
