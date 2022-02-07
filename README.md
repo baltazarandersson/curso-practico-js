@@ -1,7 +1,7 @@
-# Repositorio del curso practico de JavaScript, primer proyecto
+# Repositorio del curso practico de JavaScript
 
-## Calculadora del parametro y area del Cuadrado, Triangulo y Circulo.
+## Calculadora del parametro y area del Cuadrado, Triangulo y Circulo. (primer taller)
 
 [Online demo](https://baltazarandersson.github.io/curso-practico-js/figuras.html)
 
-## Calculadora de descuentos porcentuales
+## Calculadora de descuentos porcentuales. (Segundo taller)
