@@ -4,4 +4,4 @@
 
 [Online demo](https://baltazarandersson.github.io/curso-practico-js/figuras.html)
 
-## Calculadora de descuentos porcentuales. (Segundo taller)
+## Calculadora de descuentos porcentuales. (segundo taller)
