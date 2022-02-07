@@ -1,4 +1,3 @@
 ## Repositorio del curso practico de JavaScript, primer proyecto
-### Una preview del primer proyecto ;
 
-![web-preview](https://i.imgur.com/vhWVDoe.png "web-preview")
+[Online demo](https://baltazarandersson.github.io/curso-practico-js/figuras.html)
