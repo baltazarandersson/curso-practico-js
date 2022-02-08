@@ -7,3 +7,5 @@
 ## Calculadora de descuentos porcentuales. (segundo taller)
 
 [Online demo](https://baltazarandersson.github.io/curso-practico-js/porcentaje.html)
+
+## Calculadora de media, mediana y moda. (tercer taller)
