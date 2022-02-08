@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculador de fig. geometricas</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
         body {
-            background-color: #010409;
-            color: whitesmoke;
-            font-family: arial;
-            text-align: center;
-            margin: 0px;
             padding: 0px;
+            font-family: 'Open Sans', sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #F2F2F2;
+            margin: 0px;
+            text-align: center;
+            font-size: small;
+            display: flex;
+            flex-direction: column;
         }
         h2 {
             margin: 0px;
         }
         h1 {
             margin: 0px;
+            font-size: 24px;
         }
         .card {
             width: 25%;
             border-radius: 12px;
-            background-color: #0D1117;
+            background-color: white;
             height: 70vh;
+            box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+
             }
         .card-content {
             display: flex;
@@ -50,36 +58,39 @@
             justify-content: space-around;
             padding: 20px;
         }
-        button{
-            margin-top: 8px;
-            cursor: pointer;
-            outline: 0;
-            color: #fff;
-            background-color: #0d6efd;
-            border-color: #0d6efd;
+        button {
+            margin: auto;
+            margin-top: 10px;
+            width: 100%;
             display: inline-block;
-            font-weight: 400;
-            line-height: 1.5;
-            text-align: center;
-            border: 1px solid transparent;
-            padding: 6px 12px;
+            outline: 0;
+            cursor: pointer;
+            border: none;
+            padding: 0px;
+            height: 45px;
+            line-height: 45px;
+            border-radius: 7px;
+            font-weight: 600;
             font-size: 16px;
-            border-radius: .25rem;
-            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            background: #fff;
+            color: #696969;
+            box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+            transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
         }
-        button:hover {
-            color: #fff;
-            background-color: #0b5ed7;
-            border-color: #0a58ca;
-        }          
+        button:hover{
+            background: rgba(255,255,255,0.9);
+            box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+        }    
         input {
             background-color: transparent;
             border-radius: .25rem;
-            border: 1px solid #30363D;
-            outline: 0;
             margin-top: 8px;
-            color: white;
             height: 20px;
+            box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+            background: #fff;
+            color: #696969;
+            border: none;
+            outline: 0;
             text-align: center;
         }
         input::-webkit-outer-spin-button,
@@ -88,7 +99,10 @@
             margin: 0;
         }
         label {
+            margin-bottom: 0px;
             font-size: small;
+            font-weight: bold;
+            color: #696969;
         }
         .input-triangulo {
             display: flex;
@@ -104,12 +118,16 @@
             width: 120px;
         }
         header {
-            background-color: #0D1117;
-            height: 80px;
-            margin-bottom: 20px;
-            border-radius: 0px 0px 20px 20px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+            margin: 0px;
+            width: 100%;
+            height: 70px;
+            background-color: white;
+            margin-bottom: 50px;
+            border-radius: 0px 0px 10px 10px;
             justify-content:center;
         }
 

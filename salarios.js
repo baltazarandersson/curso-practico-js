@@ -80,7 +80,7 @@ colombia.push({
   salary: 100000000,
 });
 
-//
+// Helpers
 
 const SalariosCol = colombia.map(
     function (persona) {
@@ -98,6 +98,7 @@ function esPar(N) {
     return (N%2===0)
 }
 
+//Mediana
 function calcularMediana(lista) {
     const mitad = parseInt(lista.length/2)
     if (esPar(lista.length)) {
@@ -108,3 +109,7 @@ function calcularMediana(lista) {
         return Mediana
     }
 }
+
+//Top 10 Porciento
+const salariosColTop10 = SalariosColSorted.splice(SalariosColSorted.length * 0.9, SalariosColSorted.length * 0.1)
+const medianaTop10 = calcularMediana(salariosColTop10)
